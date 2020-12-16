@@ -2,7 +2,6 @@
 
 Created time: Dec 15, 2020 4:55 PM
 Last edited time: Dec 15, 2020 5:05 PM
-Property: Zi Xuan Chow
 Tags: information
 
 ## Revert to a commit
