@@ -2,7 +2,6 @@
 
 Created time: Dec 9, 2020 4:54 PM
 Last edited time: Dec 16, 2020 9:28 AM
-Property: Zi Xuan Chow
 Tags: information
 
 ## Retrieve crashlog from device
