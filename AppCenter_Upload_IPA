@@ -1,0 +1,19 @@
+#!/bin/bash
+
+ipaPath=$(find <PATH_TO_IPA_FILE> -name “*.ipa” | head -1)
+echo “Found ipa at $ipaPath”
+if [[ -z ${ipaPath} ]]
+then
+    echo “NO IPA FOUND, PLEASE CHECK YOUR FILE PATH...”
+else
+    echo “Publishing $ipaPath to App Center”
+    appcenter distribute release \
+        --group Collaborate \
+        --file “<PATH_TO_IPA_FILE>” \
+        --release-notes ‘Changelog...’ \
+        --app #USER/ORGANISATION_NAME/AppName \
+        --token “cdba9a69ec6558c0be02cd56f86cda95286e7803” \
+        --quiet
+fi
+
+#User and organization name can be found on https://appcenter.ms/users/<USERNAME> or https://appcenter.ms/orgs/<ORGNAME>
